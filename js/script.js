@@ -3,15 +3,27 @@ $(document).ready(() => {
     initGallerySlider();
     initSubcategorySlider();
     initImageViewerSlider();
-    mobileNavInit();
     initSelectFields();
+    mobileNavInit();
+
+    $('.image-viewer').click(function() {
+        $('.image-viewer').hide(200);
+    })
+
+    $('.gallery__item_title').click(function(e) {
+        e.stopPropagation();
+        $('.image-viewer').show(200);
+    });
 })
+
+$('.image-viewer').hide();
 
 function initHomeSlider() {
     $("#slider").owlCarousel({
         items: 1,
         dots: true,
-        nav: true
+        nav: true,
+        loop: true,
     });
 }
 
@@ -19,6 +31,7 @@ function initImageViewerSlider() {
     $("#image-viewer").owlCarousel({
         items: 1,
         dots: true,
+        loop: true,
         nav: true
     });
 }
@@ -27,6 +40,7 @@ function initSubcategorySlider() {
     $("#subcategory-slider").owlCarousel({
         items: 1,
         dots: false,
+        loop: true,
         nav: true
     });
 }
@@ -37,6 +51,7 @@ function initGallerySlider() {
         dots: false,
         nav: true,
         margin: 30,
+        loop: true,
         responsive: {
             0: {
                 items: 1
