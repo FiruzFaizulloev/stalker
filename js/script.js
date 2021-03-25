@@ -10,7 +10,7 @@ $(document).ready(() => {
         $('.image-viewer').hide(200);
     })
 
-    $('.gallery__item_title').click(function(e) {
+    $('.gallery__photo_image').click(function(e) {
         e.stopPropagation();
         $('.image-viewer').show(200);
     });
