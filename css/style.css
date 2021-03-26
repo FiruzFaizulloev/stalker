@@ -843,7 +843,7 @@ a {
 .information__item_info {
     background: #003A46;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-    border-radius: 15px 0 0 15px;
+    border-radius: 6px 0 0 6px;
     padding: 38px 42px 44px 45px;
 }
 
@@ -889,7 +889,7 @@ a {
 
 .information__item_picture {
     overflow: hidden;
-    border-radius: 0 15px 15px 0;
+    border-radius: 0 6px 6px 0;
 }
 
 .subcategory__content {
@@ -1464,12 +1464,12 @@ a {
     .information__item_info {
         order: 2;
         padding: 14px 15px 24px;
-        border-radius: 15px;
+        border-radius: 6px;
     }
     .information__item_picture {
         order: 1;
         height: 190px;
-        border-radius: 15px;
+        border-radius: 6px;
         overflow: hidden;
         width: 100%;
         min-width: 100%;
