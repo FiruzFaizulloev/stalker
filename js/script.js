@@ -7,7 +7,8 @@ $(document).ready(() => {
     mobileNavInit();
 
     $('.image-viewer').click(function() {
-        $('.image-viewer').css({'visibility': 'hidden'})
+        $('.image-viewer').css({'visibility': 'hidden'});
+        $('.gallery .owl-nav').css({display: 'block'});
     })
 
     $('#image-viewer').click(function (e) {
@@ -16,7 +17,8 @@ $(document).ready(() => {
 
     $('.gallery__photo_image').click(function(e) {
         e.stopPropagation();
-        $('.image-viewer').css({'visibility': 'visible'})
+        $('.image-viewer').css({'visibility': 'visible'});
+        $('.gallery .owl-nav').css({display: 'none'});
     });
 })
 
