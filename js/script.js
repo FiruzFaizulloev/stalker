@@ -7,16 +7,18 @@ $(document).ready(() => {
     mobileNavInit();
 
     $('.image-viewer').click(function() {
-        $('.image-viewer').hide(200);
+        $('.image-viewer').css({'visibility': 'hidden'})
+    })
+
+    $('#image-viewer').click(function (e) {
+        e.stopPropagation();
     })
 
     $('.gallery__photo_image').click(function(e) {
         e.stopPropagation();
-        $('.image-viewer').show(200);
+        $('.image-viewer').css({'visibility': 'visible'})
     });
 })
-
-$('.image-viewer').hide();
 
 function initHomeSlider() {
     $("#slider").owlCarousel({
